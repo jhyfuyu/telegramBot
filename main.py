@@ -4,7 +4,7 @@ from config import *
 from bs4 import BeautifulSoup
 import telebot as tb
 
-def parsing():
+def parsing(x):
     print(URL)
     response = requests.get(URL)
     soup = BeautifulSoup(response.text,'html.parser')
@@ -13,4 +13,4 @@ def parsing():
 def data_treatment():
     pass
 if __name__ == '__main__':
-    parsing()
+    parsing(None)
