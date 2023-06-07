@@ -15,7 +15,7 @@ def order_parsing():
         soup = BeautifulSoup(response.text,'html.parser')
         orders_list = (soup.find('div',class_="task__title")).text #парсим основную инфу
         list1 = [soup,orders_list]
-        orders_list = new_value
+        new_value = orders_list
         if new_value != old_value:
             return list1
             orders_list = old_value
